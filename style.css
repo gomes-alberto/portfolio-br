@@ -1,0 +1,620 @@
+/* ESTILIZAÇÃO GERAL DO SITE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* MEU */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.flex {
+    display: flex;
+}
+
+ .btn-contacto button {
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 650;
+    background-color: #00ff08;
+    border: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+
+    color: #ffffff;
+ }
+
+h2.titulo {
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00ff08;
+}
+
+/* Aplicando o hover em todos os botãos */
+button:hover, form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+/* ESTILO INDIVIDUAL DO CABEÇALHO */
+header {
+    padding: 20px 4%;
+    position: relative;
+    /* top: 0;
+    left: 0;
+    width: 100%; */
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5cc0;
+    text-decoration: none;
+    display: inline-block;
+    transform: .2s;
+    
+    padding: 10px 15px;
+}
+
+/* Aplicando o Hover nas Listas */
+header nav.menu-desktop a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+
+    font-weight: 500;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/* ----------------------------------------------ESTILO DO MENU MOBILE--------------------------------------------- */
+.btn-abrir-menu img {
+    cursor: pointer;
+
+    /* color: #00ff08;
+    font-size: 40px;
+
+    display: none; */
+}
+
+.menu-mobile {
+    background-color: #000000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+
+    /* display: none; */
+}
+
+/* Configurar o botao Abrir Menu */
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+/* Configurar a Aparição do Overlay */
+.menu-mobile.abrir-menu ~ .overlay-menu {
+    display: block;
+}
+
+/* Configurando o Estilo do Botão de Fechar o Botão Mobile */
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+}
+
+/* MEU */
+.menu-mobile .btn-fechar img {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+
+/* .menu-mobile .btn-fechar img {
+    color: #00ff08;
+    font-size: 30px;
+} */
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 15px 8%;
+    display: block;
+
+    /* font-weight: 500; */
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #00ff08;
+    color: #000000;
+
+    font-weight: 700;
+}
+
+/* Conigurado a Função overlay-menu */
+.overlay-menu {
+    background-color: #00000093;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 20px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #ffffff;
+    font-size: 38px;
+    /* line-height: 40px; */
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #00ff08;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #ffffff;
+    margin: 20px 0;
+
+    font-size: 16px;
+}
+
+/* Configurando os KeyFrames para a foto do Site */
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* Chamando os KayFrames */
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+section.especialidades {
+    padding: 20px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+
+    border: 1px solid;
+}
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff78;
+}
+
+/* IMAGENS DAS ESPECIALIDADES */
+.especialidades .especialidades-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.especialidades .especialidades-box img {
+    width: 80px;
+    height: 80px;   
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 26px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.especialidades .especialidades-box p {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* MINHA MALUQUISE */
+.especialidades-box .img-skills img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* ESTILO DO SOBRE */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #ffffff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    /* line-height: 50px; */
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #00ff08;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #00ff08;
+    background-color: #000000;
+    /* font-size: 22px; */
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* Meu código */
+.btn-social a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* ESTILO DO PORTIFOLIO */
+section.portifolio {
+    padding: 40px 4%;
+    box-shadow: 0 0 10px 1px #ffffff1d; 
+}
+
+section.portifolio .flex {
+    justify-content: space-around;
+    margin: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+
+    text-align: center;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* ESTILO DO FORMULÁRIO */
+section.formulario {
+    padding: 40px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: none;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    background-color: #00ff08;
+    color: #ffffff;
+    font-weight: 650;
+    cursor: pointer;
+    transition: .2s;
+
+    border: none;
+    padding: 15px;
+    width: 200px;
+}
+
+/* ESTILO DO RODAPÉ */
+footer {
+    padding: 20px 4%;
+    box-shadow: 0 0 10px 1px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #00ff08;
+}
+
+footer .line-footer p {
+    color: #00ff08;
+    font-size: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+footer .line-footer p img {
+    margin-right: 5px;
+    margin-bottom: -20px;
+}
+
+/* ------------------------------------------------------------AQUI ENTRA A MINHA MAULUQUICE. 
+VOU APLICAR VÁRIAS MEDIAS QUERRY PARA 
+O LOGO DO SITE. O OBJECTIVO É FAZER COM QUE ELE NÃO FIQUE MUITO 
+ESTRANHO QUANDO O SITE SE TRANSFORMAR EM RESPONSIVO -----------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+    .logo img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logo img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo img {
+        width: 60%;
+    }
+
+    footer .line-footer p a {
+        font-size: 12px;
+    }
+}
+
+/* -------------------------------- MINHA MALUQUICE TOMARA QUE DE CERTO --------------------------------------------- */
+/* @media screen and (max-width: 1110px) {
+    .btn-abrir-menu {
+        display: contents;
+    }
+
+} */
+
+/* @media screnn and (max-width: 400px) {
+    .logo img {
+        width: 50%;
+    }
+} */
+
+/* TRABALHANDO A RESONSIVIDADE DO SITE, USANDO MEDIA QUERRY - 1012 */
+@media screen and (max-width: 1090px) {
+
+    /* SECÇÃO DAS CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 35px;
+
+        /* line-height: 30px; */
+    }
+
+    /* SECÇÃO CABEÇALHOS E MENUS */
+    .menu-desktop, .btn-contacto {
+        display: none;
+    }
+
+    /* SECÇÃO TOPO DO SITE */
+    section.topo-do-site .flex {
+        gap: 10px;
+    }
+
+    section.topo-do-site .txt-topo-site {
+        padding: 5px 8%;
+
+        text-align: center;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    section.topo-do-site img {
+        width: 100%;
+    }
+
+    /* SECÇÃO ESPECIALIDADES */
+    section.especialidades {
+        padding: 5px 8%;
+    }
+
+    /* MEU */
+    section.especialidades .flex {
+        gap: 10px;
+    }
+
+    /* SECÇÃO SOBRE */
+    selection.sobre {
+        padding: 5px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 35px;
+        /* line-height: 35px; */
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    /* Trabalhando com a Imagem */
+    .img-sobre img {
+        width: 100%;
+    }
+
+    /* SECÇÃO DO PORTIFOLIO (PROJECTOS) */
+    section.portifolio {
+        padding: 70px 8%;
+    }
+
+    /* MEU */
+    section.portifolio {
+        padding-bottom: 10px;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portifolio .flex {
+        gap: 60px;
+    }
+
+    /* SECÇÃO DO RODAPÉ */
+    footer .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    } 
+
+    /* ---------------------------------------------- COMENTARIO IMORTANTE. ARA FAZER O BOTAO AARECER. */
+    header .btn-abrir-menu {
+        display: block;
+    }
+
+}
+
+.btn-abrir-menu {
+    display: none;
+}
