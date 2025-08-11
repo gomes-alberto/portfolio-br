@@ -44,7 +44,7 @@ Fazer e refazer esse projeto me trouxe ganhos importantes:
 ## 📂 Como Visualizar
 
 <!-- Acesse a minha versão do projeto clicando [aqui](URL_DO_SEU_PROJETO).   -->
-Se quiser, confira a versão original procurando no YouTube por: **"Bruno Rodrigues Intelogia"** ou **"Intelogia"**.
+Se quiser, confira a minha versão acessando  o meu Linkedlin clicando [aqui](https://www.linkedin.com/in/gomesalberto) ou a versão original procurando no YouTube por: **"Bruno Rodrigues Intelogia"** no YouTube.
 
 ---
 
