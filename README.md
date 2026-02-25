@@ -52,3 +52,7 @@ Se quiser, confira a minha versão acessando  o meu Linkedlin clicando [aqui](ht
 
 Este projeto está sob a licença **MIT**.  
 Sinta-se à vontade para usá-lo, estudá-lo e adaptá-lo para seus próprios aprendizados.
+
+---
+
+Feito com 💙 por **Gomes Alberto**
